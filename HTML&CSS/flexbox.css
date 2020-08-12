@@ -86,3 +86,32 @@
 .main{
     flex: 4;
 }
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.container-layout-with-sidebar{
+    display: flex;
+    height: 80vh;
+}
+
+.sidebar-2{
+    flex: 1;
+    background-color: hotpink;
+}
+
+.content-2{
+    flex: 4;
+    background-color: indianred;
+    padding-left: 40px;
+}
+
+
+.item{
+    text-align: center;
+    margin-top: 40px;
+}
+
