@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Gojek Landing Page Layout Flexbox</title>
+    </head>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .header-sticky{
+            background-color: lightgray;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 150px;
+            padding-right: 150px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+        }
+
+        .jumbotron-gojek{
+            height: 600px;
+            background-color: lightskyblue;
+            margin-top: 98px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            box-sizing: border-box;
+            padding-bottom: 40px;
+        }
+
+        .about-yayasan{
+            height: 300px;
+            background-color: lightyellow;
+            display: flex;
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+
+        .image-about-yayasan{
+            flex: 1;
+            border: 1px solid black;
+        }
+
+        .description-about-yayasan{
+            flex: 1;
+            margin-left: 20px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    </style>
+     <body>
+         <div class="header-sticky">
+            <div class="left">
+                <span>Logo</span>
+                <span>Menu 1</span>
+                <span>Menu 2</span>
+                <span>Menu 3</span>
+            </div>
+            <div class="right">
+                <span>Language</span>
+            </div>
+         </div>
+
+         <div class="jumbotron-gojek">
+            <button>Click</button>
+         </div>
+
+         <div class="about-yayasan">
+             <div class="image-about-yayasan">
+                
+             </div>
+             <div class="description-about-yayasan">
+                <div>Title</div>
+                <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, pariatur id quaerat nisi non dolorem accusamus tenetur explicabo, repellat ipsam quasi impedit veritatis reprehenderit nobis soluta ad incidunt, quas distinctio?</div>
+                <button>Learn More</button>
+            </div>
+         </div>
+     </body>
+</html>
