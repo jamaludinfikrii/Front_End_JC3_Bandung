@@ -1,0 +1,39 @@
+
+/* Desktop */ 
+/* > 768 */
+
+/* Tablet */
+/* > 600 && < 768 */
+
+/* Phone */
+/* < 600 */
+
+
+/* 700px */
+
+.merah{
+    color: pink;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .merah{
+        color: blue;
+    }
+    .desktop-only{
+        display: none;
+    }
+    /* tablet */
+}
+
+
+@media only screen and (max-width: 600px) {
+    .merah{
+        color: orange;
+    }
+    .desktop-only{
+        display: none;
+    }
+    /* mobile */
+}
+
