@@ -1,0 +1,346 @@
+<html>
+    <head>
+        <title>Gojek Landing Page Layout Flexbox</title>
+    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+    <style>
+        .body{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .header-sticky{
+            background-color: lightgray;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            /* ada di pojok kiri dan di pojok kanan */
+            padding-left: 150px;
+            padding-right: 150px;
+            position: fixed;
+            /* biar di scroll tidak hilang */
+            top: 0px;
+            left: 0px;
+            right: 0px;
+        }   
+
+        .jumbotron-gojek{
+            height: 600px;
+            /* biar punya tinggi */
+            background-color: lightgreen;
+            margin-top: 98px;
+            /* supaya tidak menutupi header */
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            box-sizing: border-box;
+            /* supaya ketika di padding box nya tidak nambah */
+            padding-bottom: 40px;
+        }
+
+        .about-yayasan{
+            margin-top: 70px;
+            height: 300px;
+            background-color: lightsalmon;
+            display: flex;
+            /* biar di bagi dua menjadi image dan desc */
+            padding-left: 150px;
+            padding-right: 150px;
+            /* supaya sama dengan header */
+            margin-bottom: 70px;
+        }
+
+        .image-about-yayasan{
+            flex: 1;
+            border: 1px solid black;
+        }
+
+        .description-about-yayasan{
+            flex: 1;
+            margin-left: 20px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            display: flex;
+            /* biar bisa justify space around */
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .banner-gojek{
+            background-color: cadetblue;
+            height: 500px;
+            margin-bottom: 70px;
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+        .img-banner{
+            border: 1px solid black;
+            height: 100%;
+
+        }
+
+        .our-service{
+            height: auto;
+            background-color: burlywood;
+            display: flex;
+            padding-left: 150px;
+            padding-right: 150px;
+            flex-direction: column;
+            
+        }
+
+        .container-item{
+            display: flex;
+            /* height: 200px; */
+            padding: 16px 16px 24px;
+            
+            
+        }
+        .item{
+            /* margin-top: 20px; */
+            border: 1px solid black;
+            width: 260px;
+            height: 300px;
+            margin-right: 30px;
+            
+        }
+
+        .transport{
+            flex: 1;
+        }
+        .food{
+            flex: 1;
+        }
+
+        .payment{
+            flex: 1;
+        }
+
+        .news{
+            flex: 1;
+        }
+
+        .business{
+            flex: 1;
+            margin-bottom: 50px;
+        }
+
+        /* ============== footer ========= */
+
+        .footer{
+            height: 300px;
+            background-color: gray;
+            padding-left: 150px;
+            padding-right: 150px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            box-sizing: border-box;
+            display: flex;
+        }
+        .language-footer{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            flex: 30%;
+            border: 1px solid black;
+        }
+        .about-us{
+            flex: 20%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        .help-center{
+            flex: 20%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        .follow-us{
+            flex: 30%;
+            border: 1px solid black;
+        }
+
+        /* ========= font ========= */
+
+        h2, h3, p{
+            font-family: 'Baloo Tamma 2', cursive;
+            padding: 0px;
+            margin: 0px;
+        }
+        h2{
+            font-size: 37px;
+            margin-bottom: 16px;
+        }
+        h3{
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+        p{
+            font-size: 18px;
+            
+        }
+        .item-footer{
+            font-family: 'Baloo Tamma 2', cursive;
+            font-size: medium;
+        }
+
+
+    </style>
+    <body>
+        <div class="header-sticky">
+            <div class="left">
+                <span>Logo</span>
+                <span>Menu 1</span>
+                <span>Menu 2</span>
+                <span>Menu 3</span>
+            </div>
+            <div class="right">
+                <span>Language</span>
+            </div>
+        </div>
+        <div class="jumbotron-gojek">
+            <button>Click</button>
+        </div>
+
+        <div class="about-yayasan">
+            <div class="image-about-yayasan">
+
+            </div>
+            <div class="description-about-yayasan">
+                <div>Title</div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque cum qui dignissimos? Vel cumque praesentium sit cum nulla ut voluptatum, sunt exercitationem nisi sapiente. Iste, exercitationem. Eos, amet! Magni, neque?</div>
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div class="banner-gojek">
+            <div class="img-banner">
+            </div>
+        </div>
+
+        
+        <div class="our-service">
+            <h2>Our Services</h2>
+            <div class="transport">
+                <div class="title">
+                    <h3>Transport & Logistic</h3>
+                </div>
+                <div class="description">
+                    <p>Moving something (or someone) from point A to point B? Our Gojek drivers in green jackets and helmets save your time, and energy.</p>
+                </div>
+                <div class="container-item">
+                    <div class="item">
+                        goride
+                    </div>
+                    <div class="item">
+                        gocar
+                    </div>
+                    <div class="item">
+                        gobluebird
+                    </div>
+                    <div class="item">
+                        gosend
+                    </div>
+                </div>
+            </div>
+            <div class="food">
+                <div class="title">
+                    <h3>Food & FMCG</h3>
+                </div>
+                <div class="description">
+                    <p>Order food from a whole lotta restaurants, get medicines delivered in a jiffy, or fill your shopping cart from many a mart.</p>
+                </div>
+                <div class="container-item">
+                    <div class="item">
+                        gofood
+                    </div>
+                    <div class="item">
+                        gomed
+                    </div>
+                    <div class="item">
+                        gomart
+                    </div>
+                </div>
+            </div>
+            <div class="payment">
+                <div class="title">
+                    <h3>Payments</h3>
+                </div>
+                <div class="description">
+                    <p>From split the bills to donations, we make payments reliable, easy and delightful for our customers and merchants alike.</p>
+                </div>
+                <div class="container-item">
+                    <div class="item">
+                        gopay
+                    </div>
+                    <div class="item">
+                        gobills
+                    </div>
+                    <div class="item">
+                        paylater
+                    </div>
+                    <div class="item">
+                        pulsa
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <div class="title">
+                    <h3>News & Entertainment</h3>
+                </div>
+                <div class="description">
+                    <p>Binge on your favourite series, book tickets to the next concert, organise celebrity events, and do much more. All your treasured digital content belong here.</p>
+                </div>
+                <div class="container-item">
+                    <div class="item">
+                        goplay
+                    </div>
+                    <div class="item">
+                        gotix
+                    </div>
+                 </div>
+            </div>
+            <div class="business">
+                <div class="title">
+                    <h3>Business</h3>
+                </div>
+                <div class="description">
+                    <p>Your business partner</p>
+                </div>
+                <div class="container-item">
+                    <div class="item">
+                        gobiz
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="language-footer">
+                <div>
+                    logo Gojek
+                </div>
+                <div>
+                    Language
+                </div>
+            </div>
+            <div class="about-us">
+                <div class="item-footer">About Us</div>
+                <div class="item-footer">Blog</div>
+                <div class="item-footer">Services</div>
+                <div class="item-footer">Careers</div>
+                <div class="item-footer">Media Centre</div>
+            </div>
+            <div class="help-center">
+                <div class="item-footer">Help Centre</div>
+                <div class="item-footer">Contact Us</div>
+                <div class="item-footer">Driver Help Centre</div>
+                <div class="item-footer">Terms & Conditions</div>
+                <div class="item-footer">Privacy Policy</div>
+            </div>
+            <div class="follow-us">
+                Follow us
+            </div>
+        </div>
+    </body>
+</html>

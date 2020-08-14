@@ -1,0 +1,429 @@
+/* CSS RESET code from meyerweb.com */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* end of Css reset */
+
+* {
+    border: 2px solid black
+}
+
+body {
+    background-color: rgb(174, 233, 241);
+    font-family: MaisonNeue-Book, sans-serif;
+}
+
+.header {
+    height: 70px;
+    background-color: #ffff;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    box-sizing: border-box;
+}
+
+.upper {
+    align-self: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.header .end {
+    position: relative;
+    margin-left: 400px;
+    align-self: center;
+    box-sizing: border-box;
+}
+
+.header .logo img {
+    height: 70px;
+    margin-left: 50px;
+}
+
+.content-1 {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.content-1 .judul {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 150px;
+    color: green;
+}
+
+.content-1 .judul-2 {
+    border: 2px solid darkorange;
+    border-radius: 10px;
+    width: 450px;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    color: green;
+    align-self: center;
+    box-sizing: border-box;
+}
+
+.content-2 {
+    margin: 40px 60px 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.boxsatu {
+    border: 10px solid green;
+    height: 175px;
+    width: 375px;
+    border-radius: 20px;
+}
+
+.content-2 .button {
+    background-color: green;
+    padding: 7px 10px 7px 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.about-yayasan {
+    margin: 50px 50px 50px 50px;
+    display: flex;
+    padding: 50px;
+}
+
+.about-yayasan .descript {
+    margin-left: 30px;
+    line-height: 1.50;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.about-yayasan .title {
+    font-size: 45px;
+}
+
+.about-yayasan .baksos {
+    border-radius: 5px;
+}
+
+.about-yayasan a {
+    font-size: 25;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.kotak {
+    margin: 50px 50px 50px 50px;
+}
+
+.kotak img {
+    width: 1170px;
+    height: 600px;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+.title2 {
+    margin: 20px;
+    margin-left: 100px
+}
+
+.title2 .a {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px
+}
+
+.title2 .b {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.title2 .c {
+    padding: 20px;
+}
+
+.title2 .d {
+    margin-left: 20px;
+}
+
+.container-2 {
+    margin: 30px 90px 30px 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    height: 300px;
+    background-color: springgreen;
+    border-radius: 20px;
+    line-height: 1.50;
+}
+
+.bold {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.end {
+    margin-top: 20px;
+    text-align: start;
+    font-size: 20px;
+}
+
+.container-3 {
+    margin: 30px 90px 30px 90px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.box2 {
+    width: 23%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    height: 300px;
+    background-color: springgreen;
+    border-radius: 20px;
+    line-height: 1.50;
+}
+
+.full-container {
+    margin-top: 70px;
+    height: 400px;
+    background-color: #25282b;
+    display: flex;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.first-container {
+    width: 370px;
+    height: 202px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.first-container .logo2 img {
+    height: 120px;
+    width: 200px;
+}
+
+.first-container .indo button {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+.second-container {
+    width: 185px;
+    height: 201px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white
+}
+
+.third-container {
+    width: 185px;
+    height: 201px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white
+}
+
+.logokanan {
+    width: 370px;
+    height: 202px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.logokanan .logo-google {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logokanan .download {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo-google .google img {
+    width: 167;
+    height: 50px;
+    border-image-slice: 20px;
+    margin: 5px
+}
+
+.logo-google .playstore img {
+    width: 166.51px;
+    height: 53px;
+    margin-top: 5px;
+}
+
+.socmed {
+    display: flex;
+    justify-content: space-around;
+}
+
+.socmed .twitter img {
+    width: 40px;
+    height: 41px;
+    margin: 5px
+}

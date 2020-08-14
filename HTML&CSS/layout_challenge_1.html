@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Layout Challenge 1</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+
+            .header{
+                background-color: lightgrey;
+                height: 100px;
+            }
+
+            .card-item{
+                position: relative;
+                border: 1px solid black;
+                flex: 1;
+                height: 300px;
+                margin: 0px 20px;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+
+            .card-container{
+                padding: 10px 40px;
+                display: flex;
+            }
+
+            .card-image{
+                height: 100px;
+                background-color: gray;
+            }
+            .item-text{
+                border: 1px solid black;
+                height: 20px;
+                width: 45%;
+                
+            }
+            .container-text{
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .desc-text{
+                margin-top: 20px;
+                height: 20px;
+                border: 1px solid black;
+            }
+            .x-btn{
+                border: 1px solid black;
+                padding: 2px;
+                border-radius: 100%;
+                font-size: 10px;
+                position: absolute;
+                top: 5px;
+                right: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+
+        </div>
+
+        <div class="card-container">
+            
+            
+        </div>
+
+       
+        <script>
+            var container = document.getElementsByClassName('card-container')[0]
+            container.innerHTML = `<div class="card-item">
+                <div class="card-image">
+
+                </div>
+
+                <div class="container-text">
+                    <div class="item-text"></div>
+                    <div class="item-text"></div>
+                </div>
+
+                <div class="desc-text"></div>
+                <span class="x-btn">
+                    X
+                </span>
+            </div>`.repeat(4)
+        </script>
+    </body>
+</html>
+
+
+

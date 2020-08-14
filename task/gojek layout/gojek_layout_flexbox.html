@@ -1,0 +1,399 @@
+<html>
+
+<head>
+    <title>Gojek Landing Page Layout Flexbox</title>
+</head>
+<style>
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .header-sticky {
+        background-color: lightgray;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 150px;
+        padding-right: 150px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+    .jumbotron-gojek {
+        height: 600px;
+        background-color: lightskyblue;
+        margin-top: 98px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        box-sizing: border-box;
+        padding-bottom: 40px;
+    }
+
+    .about-yayasan {
+        height: 300px;
+        background-color: lightyellow;
+        display: flex;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .image-about-yayasan {
+        flex: 1;
+        border: 1px solid black;
+
+    }
+
+    .description-about-yayasan {
+        flex: 1;
+        margin-left: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    * {
+        box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    .container-row {
+        display: flex;
+        height: 100px;
+        flex-direction: row;
+        /* vh = viewport height */
+        /* vw = viewport width */
+    }
+
+    .box {
+        height: 100px;
+        border: 1px solid black;
+    }
+
+    .satu {
+        flex: 1;
+        background-color: burlywood;
+        order: 1;
+    }
+
+    .dua {
+        flex: 1;
+        background-color: cadetblue;
+        order: 1;
+    }
+
+    .tiga {
+        flex: 1;
+        background-color: chocolate;
+        order: 1;
+    }
+
+    a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+    }
+
+    a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .previous {
+        background-color: #f1f1f1;
+        color: black;
+    }
+
+    .next {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .round {
+        border-radius: 50%;
+    }
+</style>
+
+<body>
+    <div class="header-sticky">
+        <div class="left">
+            <span>Logo</span>
+            <span>Menu 1</span>
+            <span>Menu 2</span>
+            <span>Menu 3</span>
+        </div>
+        <div class="right">
+            <span>Language</span>
+        </div>
+    </div>
+
+    <div class="jumbotron-gojek">
+        <button>Click</button>
+    </div>
+
+    <div class="about-yayasan">
+        <div class="image-about-yayasan">
+            <img src="https://lelogama.go-jek.com/cache/d3/d7/d3d72c19cd6a8eb57f33df23da9ede42.jpg"
+                style="width: 100% ;">
+        </div>
+        <div class="description-about-yayasan">
+            <div>Title</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, pariatur id quaerat nisi non dolorem
+                accusamus tenetur explicabo, repellat ipsam quasi impedit veritatis reprehenderit nobis soluta ad
+                incidunt, quas distinctio?</div>
+            <button>Learn More</button>
+        </div>
+    </div>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="https://lelogama.go-jek.com/cache/48/55/4855809cb1bf238f0dc39e1a25829cb1.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="https://lelogama.go-jek.com/cache/78/86/7886d9408aa59dd23a5c15dcc0c50586.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="https://lelogama.go-jek.com/cache/1f/b2/1fb204aad066b09c578eb661fb57154e.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="https://lelogama.go-jek.com/cache/5f/c2/5fc2cfe05008de5b6744562e01b341e6.jpg" style="width:100%">
+            <div class="text">Caption four</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <h1> Our Service </h1>
+
+    <h1>Transport and Logistics</h1>
+    <h2><a href="#" class="previous round">&#8249;</a>
+        <a href="#" class="next round">&#8250;</a></h2>
+    (or someone) from point A to point B? Our Gojek drivers in green jackets and helmets save
+    your time, and energy.
+    <div class="container-row">
+        <div class="box satu"></div>
+        <div class="box dua"></div>
+        <div class="box tiga"></div>
+    </div>
+
+    <h1>Food & FMCG</h1>
+    <h2><a href="#" class="previous round">&#8249;</a>
+        <a href="#" class="next round">&#8250;</a></h2>
+    Order food from a whole lotta restaurants, get medicines delivered in a jiffy, or fill your shopping cart from
+    many
+    a mart.
+    <div class="container-row">
+        <div class="box satu"></div>
+        <div class="box dua"></div>
+        <div class="box tiga"></div>
+    </div>
+
+    <h1>Payments</h1>
+    <h2><a href="#" class="previous round">&#8249;</a>
+        <a href="#" class="next round">&#8250;</a></h2>
+
+    From split the bills to donations, we make payments reliable, easy and delightful for our customers and
+    merchants
+    alike.
+    <div class="container-row">
+        <div class="box satu"></div>
+        <div class="box dua"></div>
+        <div class="box tiga"></div>
+    </div>
+
+    <h1>News & Entertainment</h1>
+    <h2><a href="#" class="previous round">&#8249;</a>
+        <a href="#" class="next round">&#8250;</a></h2>
+    Binge on your favourite series, book tickets to the next concert, organise celebrity events, and do much more.
+    All
+    your treasured digital content belong here.
+    <div class="container-row">
+        <div class="box satu"></div>
+        <div class="box dua"></div>
+        <div class="box tiga"></div>
+    </div>
+
+    <h1>Business</h1>
+    <h2><a href="#" class="previous round">&#8249;</a>
+        <a href="#" class="next round">&#8250;</a></h2>
+    Your business partner
+    <div class="container-row">
+        <div class="box satu"></div>
+        <div class="box dua"></div>
+        <div class="box tiga"></div>
+    </div>
+</body>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+
+</html>

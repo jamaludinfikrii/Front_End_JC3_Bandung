@@ -1,0 +1,22 @@
+.container-box{
+    background-color: #cffffe;
+    height: 760px;
+    display: flex;
+}
+
+.sidebar{
+    flex: 1;
+    background-color: teal;
+}
+.sid{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.main{
+    flex: 8;
+    margin-left: 30px;
+}
+.paragraf{
+    display: inline;
+}
